@@ -1,0 +1,222 @@
+a {
+	color: #29b969;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #333;
+}
+#header_image_main {
+	height: 450px;
+	background-color: #eee;
+	overflow: hidden;
+	background-image: url('../img/header_bg.jpg');
+	background-position: 0 bottom;
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #777;
+}
+
+#header_image_main_wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header_outside {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+}
+
+#header {
+	margin: 0 auto;
+	width: 1000px;
+	background-color: white;
+	overflow: auto;
+	padding: 15px 20px 15px 10px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #888;
+}
+
+#header ul {
+	float: right;
+	margin: 0;
+}
+
+#header li {
+	float: left;
+	list-style: none;
+	margin: 11px 12px 0;
+	font-size: 1em;
+}
+
+#header li .active {
+	background-color: #29b969;
+	color: white;
+	padding: 0.3em 0.6em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#slide1, #slide2 {
+	position: absolute;
+	width: 1000px;
+}
+
+#slide1 h1 {
+	position: absolute;
+	top: 180px;
+	font-size: 22px;
+	left: 120px;
+}
+
+#slide1 p {
+	position: absolute;
+	top: 220px;
+	font-size: 15px;
+	width: 300px;
+	color: #777;
+	left: 120px;
+}
+
+#slide1 .more {
+	position: absolute;
+	top: 305px;
+	font-size: 14px;
+	background-color: #29b969;
+	border-bottom: 4px solid #209152;
+	padding: 10px 14px;
+	color: white;
+	left: 120px;
+}
+
+#slide1 img {
+	position: absolute;
+	top: 150px;
+	left: 480px;
+}
+
+#slide2 h1 {
+	position: absolute;
+	top: 122px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 62px;
+}
+
+#slide2 #here {
+	left: 230px;
+}
+
+#slide2 #comes {
+	left: 376px;
+}
+
+#slide2 #trouble {
+	left: 554px;
+}
+
+#slide2 img {
+	position: absolute;
+	left: 152px;
+	top: 223px;
+}
+
+#call_to_action {
+	background-color: #555;
+	padding: 1em;
+	text-align: center;
+}
+
+#call_to_action h1 {
+	width: 1000px;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 26px;
+	font-family: 'Francois One', sans-serif;
+}
+
+#services {
+	text-align: center;
+	padding-top: 20px;
+	background-color: #fcfcfc;
+}
+
+#services .column {
+	padding: 1.3em;
+	margin-bottom: 1em;
+}
+
+#services  img {
+	width: 40px;
+}
+
+#services h1 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0.4em 0 0 0;
+	padding: 0;
+}
+
+#services p {
+	font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#our_work {
+
+}
+
+#our_work h1 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0.4em 0 0 0;
+	padding: 0;
+	text-align: center;
+	color: #444;
+}
+
+#main_footer {
+	background-color: #29b969;
+	color: #c3eed6;
+}
+
+#main_footer h1 {
+	color: #0b783c;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#main_footer p {
+	font-size: 0.8em;
+}
+
+#main_footer .container {
+	padding: 1.5em 0 1em 0;
+}
+
+#clients {
+	background-color: #f2f2f2;
+	padding: 1em;
+	text-align: center;
+	border-top: 1px solid #ddd;
+}
+
+#clients img {
+	width: 700px;
+}
+
+#copy_info {
+	background-color: #209152;
+	font-size: 12px;
+}
+
+#copy_info .container {
+	padding: 1em 1em;
+}

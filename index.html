@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8" />
+		<title>Aesbus mockup</title>
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/modernizr.js"></script>
+	</head>
+	<body>
+		<div id="header_image_main">
+			<div id="header_image_main_wrapper">
+				<div id="slide1">
+					<h1>Flash Movie Presentations</h1>
+					<p>Cutting-edge animations are the perfect choice for product launches, tradeshows, sales and marketing campaigns.</p>
+					<img src="img/galaxy_tab.png" width="330" id="samsung_tab"/>
+				</div>
+				<div id="slide2">
+					<h1 id="here">here</h1>
+					<h1 id="comes">comes</h1>
+					<h1 id="trouble">trouble</h1>
+					<img src="img/trouble.png" id="trouble_img"/>
+				</div>
+			</div>
+		</div>
+		<div id="header_outside">
+			<div id="header">
+				<img src="http://aesbus.com/images/aesbus-header.jpg" />
+				<ul>
+					<li><a href="#" class="active">Client Login</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="call_to_action">
+			<h1>Are you managing your content? 
+Or is your content managing you? </h1>
+		</div>
+		<div id="services" class="container">
+			<div class="row">
+				<div class="small-12 medium-4 large-4 column">
+					<img src="img/idea_icon.png" />
+					<h1>Service</h1>
+					<p>Here's some service text. yada yada. marcula yada yada.</p>
+				</div>
+				<div class="small-12 medium-4 large-34 column">
+					<img src="img/idea_icon.png" />
+					<h1>Service</h1>
+					<p>Here's some service text. yada yada. marcula yada yada.</p>
+				</div>
+				<div class="small-12 medium-4 large-4 column">
+					<img src="img/idea_icon.png" />
+					<h1>Service</h1>
+					<p>Here's some service text. yada yada. marcula yada yada.</p>
+				</div>
+			</div>
+		</div>
+		<div id="clients">
+			<div  class="container">
+				<img src="img/logos.jpg" />
+			</div>
+		</div>
+		<div id="main_footer">
+			<div class="container">
+				<div class="row">
+					<div class="small-12 medium-4 large-4 column">
+						<h1>Contact us</h1>
+						<p>3707 1960 W, Suite 400<br />
+							Houston, TX 77068 <br />
+						<p>Phone: (281) 720-5000</p>
+					</div>
+					<div class="small-12 medium-4 large-4 column">
+						<h1>About Aesbus</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="small-12 medium-4 large-4 column">
+						<h1>Tweets</h1>
+						<p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+				</div>
+			</div>
+			<div id="copy_info">
+				<div class="container">
+					&copy;2014 Aesbus Company | All Rights Reserved
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			var index;
+			
+			function hideSlide(i) {
+				if(i == 1) {
+					$("#slide1").stop().find("h1").fadeTo(0, 0);
+					$("#slide1").stop().find("p").fadeTo(0, 0);
+					$("#slide1").stop().find("a").fadeTo(0, 0);
+					$("#samsung_tab").stop().fadeTo(0, 0);
+					$("#samsung_tab").css({ left : "480px", top: "190px" })
+				} else if(i == 2) {
+					$("#here").css("top", "122px").fadeTo(0, 0);
+					$("#comes").css("top", "122px").fadeTo(0, 0);
+					$("#trouble").css("top", "122px").fadeTo(0, 0);
+					$("#trouble_img").css("top", "400px").fadeTo(0, 0);
+				}
+			}
+			
+			function showSlide(i) {
+				if(i == 1) {
+					$("#samsung_tab").css({ left : "480px", top: "190px" })
+					$("#slide1").find("h1").stop().css("left", "130px").css("top", "180px").delay(500).animate({opacity: 1, left: "-=10px"}, 200);
+					$("#slide1").find("p").stop().css("left", "130px").css("top", "220px").delay(700).animate({opacity: 1, left: "-=10px"}, 200);
+					$("#slide1").find("a").stop().css("left", "130px").css("top", "305px").delay(900).animate({opacity: 1, left: "-=10px"}, 200);
+					$("#samsung_tab").stop().delay(800).animate({opacity: 1, top: "150px"}, 500);
+				} else {
+					$("#here").fadeTo(1, 50);
+					$("#comes").delay(600).fadeTo(1, 50);
+					$("#trouble").delay(1200).fadeTo(1, 50);
+					$("#trouble_img").css("top", "400px").stop().animate({opacity: 1, top: "223px"}, 2500);
+				}
+			}
+			
+			function fadeSlide(i) {
+				if(i == 1) {
+					$("#slide1").find("h1").animate({opacity: 0, top: "-=40px", left: "-=10px"}, 70);
+					$("#slide1").find("p").animate({opacity: 0, left: "-=40px"}, 50);
+					$("#slide1").find("a").animate({opacity: 0, top: "+=40px", left: "-=10px"}, 50);
+					$("#samsung_tab").animate({opacity: 0, top: "50px"}, 300);
+				} else if(i == 2) {
+					$("#here").delay(200).animate({opacity: 0, top: "100px"}, 250);
+					$("#comes").delay(350).animate({opacity: 0, top: "100px"}, 250);
+					$("#trouble").delay(500).animate({opacity: 0, top: "100px"}, 250);
+					$("#trouble_img").animate({opacity: 0, top: "400px"}, 450);
+				}				
+			}
+			
+			function next() {
+				var current = index;
+				index++;
+				if(index > 2) index = 1;
+				fade(current, index);
+				setTimeout(function () {
+					next();
+				}, 10000);
+			}
+			
+			function fade(current, next) {
+				fadeSlide(current);
+				setTimeout(function () {
+					hideSlide(current);
+					showSlide(next);
+				}, 800);
+			}
+			
+			$( document ).ready(function() {
+				index = 0;
+				hideSlide(1);
+				hideSlide(2);
+				next();
+			});
+			
+			
+		</script>
+	</body>
+</html>
