@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 
 #header_image_main_wrapper {
 	width: 1000px;
-	margin: 0 auto;
+	margin: 15px auto;
 	position: relative;
 }
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
 
 #header ul {
 	float: right;
-	margin: 0;
+	margin-top: 20px;
 }
 
 #header li {
@@ -123,23 +123,30 @@ h1, h2, h3, h4, h5 {
 
 #call_to_action {
 	background-color: #555;
-	padding: 1em;
+	padding: 3.5em 0;
 	text-align: center;
 }
 
 #call_to_action h1 {
-	width: 1000px;
 	color: #fff;
 	margin: 0 auto;
 	padding: 0;
-	font-size: 26px;
-	font-family: 'Francois One', sans-serif;
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+}
+
+#call_to_action h3 {
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
 }
 
 #services {
 	text-align: center;
 	padding-top: 20px;
-	background-color: #fcfcfc;
+	background-color: #fff;
 }
 
 #services .column {
@@ -203,7 +210,7 @@ h1, h2, h3, h4, h5 {
 
 #clients {
 	background-color: #f2f2f2;
-	padding: 1em;
+	padding: 3.5em;
 	text-align: center;
 	border-top: 1px solid #ddd;
 }
@@ -219,4 +226,62 @@ h1, h2, h3, h4, h5 {
 
 #copy_info .container {
 	padding: 1em 1em;
+}
+#contact-us {
+	height: 400px;
+	position: relative;
+	border-top: 1px solid #ddd;
+}
+#map, #contact-form{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+#form-content {
+	margin-top: 30px;
+	width: 400px;
+	float: right;
+	background-image: url('../img/trans-black.png');
+}
+#form-content form {
+	padding: 1em;
+}
+#form-content .form-row {
+	overflow: auto;
+}
+.form-row label{
+	float: left;
+	width: 50px;
+	margin-top: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+.form-row label.check{
+	float: right;
+	width: 290px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+.form-row textarea, .form-row input[type="text"]{
+	float: right;
+	width: 290px;
+}
+.form-row input[type="checkbox"]{
+	float: right;
+	margin-top: 8px;
+	margin-right: 7px;
+}
+#form-content input[type="submit"]{
+	margin-left: 80px;
+}
+#form-content h3 {
+	margin: 0;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 0.3em 0;
+	font-family: 'Francois One', sans-serif;
+	background-image: url('../img/trans-black.png');
+	color: #fff;
 }
